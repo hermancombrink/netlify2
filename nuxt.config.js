@@ -46,6 +46,7 @@ export default {
    ** Nuxt.js dev-modules
    */
   buildModules: [
+    '@nuxtjs/moment'
     // Doc: https://github.com/nuxt-community/eslint-module
     // '@nuxtjs/eslint-module'
   ],
@@ -78,6 +79,7 @@ export default {
   server: {
     port: 5700 // default: 3000
   },
+  moment: {},
   vue: {
     config: {
       ignoredElements: [

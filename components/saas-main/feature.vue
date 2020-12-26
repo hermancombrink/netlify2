@@ -3,18 +3,27 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6">
-          <div class="popup-images align-left  ">
+          <div class="popup-images align-left">
             <div class="img-one wow zoomIn" data-wow-duration="0.6s">
-              <img src="../../assets/sofbox-v2/images/home-4/401.png" alt="image1">
+              <img
+                src="@/assets/sofbox-v2/images/home-4/401.png"
+                alt="image1"
+              >
             </div>
             <div class="d-block" />
           </div>
-          <div class="layer_wrap iq-objects  style-two left-top">
+          <div class="layer_wrap iq-objects style-two left-top">
             <span class="iq-objects-02">
-              <img src="../../assets/sofbox-v2/images/home-1/07.png" alt="drive02">
+              <img
+                src="@/assets/sofbox-v2/images/home-1/07.png"
+                alt="drive02"
+              >
             </span>
             <span class="iq-objects-03">
-              <img src="../../assets/sofbox-v2/images/home-1/image5.png" alt="drive02">
+              <img
+                src="@/assets/sofbox-v2/images/home-1/image5.png"
+                alt="drive02"
+              >
             </span>
           </div>
         </div>
@@ -24,7 +33,7 @@
             <div class="col-lg-6">
               <div class="text-left">
                 <ul class="iq-list wow fadeInUp">
-                  <li v-for="(service,index) in service1" :key="index">
+                  <li v-for="(service, index) in service1" :key="index">
                     <i class="fa fa-check" /><span>{{ service.title }} </span>
                   </li>
                 </ul>
@@ -33,15 +42,18 @@
             <div class="col-lg-6">
               <div class="text-left">
                 <ul class="iq-list wow fadeInUp">
-                  <li v-for="(service,index) in service2" :key="index">
+                  <li v-for="(service, index) in service2" :key="index">
                     <i class="fa fa-check" /><span>{{ service.title }} </span>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="layer_wrap iq-objects  style-one right-top">
+            <div class="layer_wrap iq-objects style-one right-top">
               <span class="iq-objects-01">
-                <img src="../../assets/sofbox-v2/images/home-4/400.png" alt="drive02">
+                <img
+                  src="../../assets/sofbox-v2/images/home-4/400.png"
+                  alt="drive02"
+                >
               </span>
             </div>
           </div>
@@ -58,7 +70,8 @@ export default {
       titleSectionProp: {
         class: 'text-left',
         title: 'Plan & Run a Dream Event with Sofbox.',
-        description: 'Faff about only a quid blower I don’t want no agro bleeding chimney pot burke tosser cras nice one boot fanny.!'
+        description:
+          'Faff about only a quid blower I don’t want no agro bleeding chimney pot burke tosser cras nice one boot fanny.!'
       },
 
       service1: [
