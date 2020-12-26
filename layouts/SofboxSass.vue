@@ -13,7 +13,7 @@
 </template>
 <script>
 // import { menu } from '../config/constant.js'
-import logoImg from '../assets/sofbox-sass-black/images/logo.png'
+import logoImg from '../assets/xebra-tech/xt-logo-w.png'
 import Loader from '~/components/sofbox/Loader'
 export default {
   name: 'SofboxSass',
@@ -30,7 +30,7 @@ export default {
           _is_active: true
         },
         { href: '#how-it-works', title: 'Service', redirect: true },
-        { href: '#about-us', title: 'About Us', redirect: true },
+        { href: '#about-us', title: 'About', redirect: true },
         { href: '#feature', title: 'Feature', redirect: true },
         { href: '#team', title: 'Team', redirect: true },
         { href: '#testimonial', title: 'Testimonial', redirect: true },

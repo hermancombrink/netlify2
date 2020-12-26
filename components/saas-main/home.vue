@@ -1,168 +1,117 @@
 <template>
-    <div>
-         <p class="rs-p-wp-fix"></p>
-      <rs-module-wrap id="rev_slider_6_1_wrapper" data-alias="sofbox-4" data-source="gallery" style="background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
-         <rs-module id="rev_slider_6_1" style="display:none;" data-version="6.1.3">
-            <rs-slides>
-               <rs-slide data-key="rs-3" id="iq-home" data-title="Slide" data-anim="ei:d;eo:d;s:1000;r:0;t:fade;sl:0;">
-                  <img src="../../static/revslider/assets/index-4/transparent.png" class="rev-slidebg" data-no-retina><!--
-                     -->
-                  <rs-layer
-                     id="slider-3-slide-3-layer-1"
-                     data-type="image"
-                     data-rsp_ch="on"
-                     data-xy="xo:23px,14px,9px,5px;yo:-76px,-48px,-10px,-6px;"
-                     data-text="w:normal;s:20,12,9,5;l:0,16,12,7;"
-                     data-dim="w:1585px,1014px,815px,502px;h:802px,513px,412px,254px;"
-                     data-frame_0="sX:0.8;sY:0.8;"
-                     data-frame_1="e:Power4.easeOut;sp:1000;"
-                     data-frame_999="o:0;st:w;sR:8000;"
-                     style="z-index:8;font-family:Roboto;"
-                     ><img src="../../static/revslider/assets/index-4/03-min-1.png" alt="img" width="1556" height="787" data-no-retina>
-                  </rs-layer>
-                  <!--
-                     -->
-                  <rs-layer
-                     id="slider-3-slide-3-layer-2"
-                     data-type="image"
-                     data-rsp_ch="on"
-                     data-xy="x:l,l,c,c;xo:188px,150px,0,-20px;yo:200px,129px,162px,128px;"
-                     data-text="w:normal;s:20,12,9,5;l:0,16,12,7;"
-                     data-dim="w:907px,526px,472px,291px;h:623px,361px,324px,199px;"
-                     data-frame_0="y:100%;"
-                     data-frame_0_mask="u:t;"
-                     data-frame_1="st:890;sp:1200;sR:890;"
-                     data-frame_1_mask="u:t;"
-                     data-frame_999="o:0;st:w;sR:6910;"
-                     style="z-index:11;font-family:Roboto;"
-                     ><img src="../../static/revslider/assets/index-4/02-min.png" alt="img" width="907" height="623" data-no-retina>
-                  </rs-layer>
-                  <!--
-                     -->
-                  <rs-layer
-                     id="slider-3-slide-3-layer-3"
-                     data-type="image"
-                     data-rsp_ch="on"
-                     data-xy="xo:1060px,678px,590px,359px;yo:272px,174px,232px,173px;"
-                     data-text="w:normal;s:20,12,9,5;l:0,16,12,7;"
-                     data-dim="w:201px,128px,97px,59px;h:379px,242px,183px,112px;"
-                     data-frame_0="y:100%;"
-                     data-frame_0_mask="u:t;"
-                     data-frame_1="st:1710;sp:1200;sR:1710;"
-                     data-frame_1_mask="u:t;"
-                     data-frame_999="o:0;st:w;sR:6090;"
-                     data-loop_0="y:-10px;"
-                     data-loop_999="y:10px;sp:3000;e:Sine.easeInOut;yym:t;"
-                     style="z-index:12;font-family:Roboto;"
-                     ><img src="../../static/revslider/assets/index-4/01-min.png" alt="img" width="201" height="379" data-no-retina>
-                  </rs-layer>
-                  <!--
-                     -->
-                  <rs-layer
-                     id="slider-3-slide-3-layer-4"
-                     data-type="image"
-                     data-rsp_ch="on"
-                     data-xy="xo:188px,120px,91px,56px;yo:102px,65px,49px,30px;"
-                     data-text="w:normal;s:20,12,9,5;l:0,16,12,7;"
-                     data-dim="w:157px,100px,75px,46px;h:365px,233px,177px,109px;"
-                     data-frame_0="sX:0.9;sY:0.9;"
-                     data-frame_1="st:1520;sp:1000;sR:1520;"
-                     data-frame_999="o:0;st:w;sR:6480;"
-                     style="z-index:10;font-family:Roboto;"
-                     ><img src="../../static/revslider/assets/index-4/04.png" alt="img" width="157" height="365" data-no-retina>
-                  </rs-layer>
-                  <!--
-                     -->
-                  <rs-layer
-                     id="slider-3-slide-3-layer-5"
-                     data-type="text"
-                     data-color="rgba(255, 255, 255, 0.3)"
-                     data-rsp_ch="on"
-                     data-xy="x:l,l,c,c;xo:773px,494px,0,9px;yo:409px,261px,114px,83px;"
-                     data-text="w:normal;s:150,96,72,44;l:160,102,77,47;fw:700;"
-                     data-frame_1="e:Power4.easeInOut;st:2770;sp:1500;sR:2770;"
-                     data-frame_999="o:0;st:w;sR:4730;"
-                     data-tloop="u:true;"
-                     data-loop_0="x:-200px;"
-                     data-loop_999="x:200px;sp:15000;e:Sine.easeInOut;yym:t;"
-                     style="z-index:9;font-family:var(--body-font-family);"
-                     >SOFBOX
-                  </rs-layer>
-                     <rs-layer
-                     id="slider-3-slide-3-layer-7"
-                     data-type="text"
-                     data-color="#7173f0"
-                     data-rsp_ch="on"
-                     data-xy="xo:80px,40px,-82px,203px;yo:281px,208px,182px,334px;"
-                     data-text="w:normal;s:16,14,20,12;l:45,45,24,40;a: center;"
-                     data-dim="w:45px,45px,34px,40px;h:45px,45px,34px,40px;"
-                     data-padding="t:0,0,10,0;r:0,0,10,0;b:0,0,10,0;l:0,0,10,0;"
-                     data-border="bor:90px,90px,90px,90px;"
-                     data-frame_0="sX:0.9;sY:0.9;"
-                     data-frame_1="st:3030;sp:1000;sR:3030;"
-                     data-frame_999="o:0;st:w;sR:4970;"
-                     data-frame_hover="c:#fff;bgc:#7173f0;bor:90px,90px,90px,90px;"
-                     style="z-index:15;background-color:#ebf2ff;font-family:Roboto;cursor:pointer;"
-                     ><i class="fa fa-facebook" aria-hidden="true"></i>
-                  </rs-layer>
-                  <!--
-                     -->
-                  <rs-layer
-                     id="slider-3-slide-3-layer-8"
-                     data-type="text"
-                     data-color="#7173f0"
-                     data-rsp_ch="on"
-                     data-xy="xo:80px,39px,-115px,266px;yo:342px,261px,241px,333px;"
-                     data-text="w:normal;s:16,14,20,12;l:45,45,24,40;a:center;"
-                     data-dim="w:45px,45px,34px,40px;h:45px,45px,34px,40px;"
-                     data-padding="t:0,0,10,0;r:0,0,10,0;b:0,0,10,0;l:0,0,10,0;"
-                     data-border="bor:90px,90px,90px,90px;"
-                     data-frame_0="sX:0.9;sY:0.9;"
-                     data-frame_1="st:3010;sp:1000;sR:3010;"
-                     data-frame_999="o:0;st:w;sR:4990;"
-                     data-frame_hover="c:#fff;bgc:#7173f0;bor:90px,90px,90px,90px;"
-                     style="z-index:13;background-color:#ebf2ff;font-family:Roboto;cursor:pointer;"
-                     ><i class="fa fa-linkedin" aria-hidden="true"></i>
-                  </rs-layer>
-                  <!--
-                     -->
-                  <rs-layer
-                     id="slider-3-slide-3-layer-9"
-                     data-type="text"
-                     data-color="#7173f0"
-                     data-rsp_ch="on"
-                     data-xy="xo:80px,41px,-89px,143px;yo:219px,158px,116px,332px;"
-                     data-text="w:normal;s:16,14,20,12;l:45,45,24,40;a:center;"
-                     data-dim="w:45px,45px,34px,40px;h:45px,45px,34px,40px;"
-                     data-padding="t:0,0,10,0;r:0,0,10,0;b:0,0,10,0;l:0,0,10,0;"
-                     data-border="bor:90px,90px,90px,90px;"
-                     data-frame_0="sX:0.9;sY:0.9;"
-                     data-frame_1="st:3030;sp:1000;sR:3030;"
-                     data-frame_999="o:0;st:w;sR:4970;"
-                     data-frame_hover="c:#fff;bgc:#7173f0;bor:90px,90px,90px,90px;"
-                     style="z-index:14;background-color:#ebf2ff;font-family:Roboto;cursor:pointer;"
-                     ><i class="fa fa-twitter" aria-hidden="true"></i>
-                  </rs-layer>
-                  <!--
-                     -->
-                  <rs-layer
-                     id="slider-3-slide-3-layer-10"
-                     data-type="text"
-                     data-color="#1e1e1e"
-                     data-rsp_ch="on"
-                     data-xy="xo:46px,17px,-96px,-100px;yo:444px,355px,341px,215px;"
-                     data-text="w:normal;s:16,14,16,9;l:25,16,24,14;"
-                     data-btrans="rZ:-90;"
-                     data-frame_0="sX:0.9;sY:0.9;"
-                     data-frame_1="st:3060;sp:1000;sR:3060;"
-                     data-frame_999="o:0;st:w;sR:4940;"
-                     style="z-index:16;font-family: var(--body-font-family);"
-                     >Follow us on:
-                  </rs-layer>
-               </rs-slide>
-            </rs-slides>
-            <rs-progress class="rs-bottom" style="visibility: hidden !important;"></rs-progress>
-         </rs-module>
-      </rs-module-wrap>
+  <section class="sofbox-gradient-bg-top pb-0">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h2 class="mb-3">
+            Xebra Tech Ltd
+          </h2>
+          <div
+            class="owl-carousel our-testimonial"
+            data-autoplay="true"
+            data-loop="true"
+            data-nav="false"
+            data-dots="true"
+            data-items="1"
+            data-items-laptop="1"
+            data-items-tab="1"
+            data-items-mobile="1"
+            data-items-mobile-sm="1"
+          >
+            <div
+              v-for="(list, index) in List"
+              :key="index"
+              class="item text-left"
+            >
+              <div class="iq-testimonial">
+                <div class="testimonial-info">
+                  <div class="testimonial-name mb-3">
+                    <h5 class="d-inline mr-3">
+                      {{ list.name }}
+                    </h5>
+                    <span class="sub-title">{{ list.design }}</span>
+                  </div>
+                </div>
+                <p>{{ list.description }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="testimonial-circle postion-relative">
+            <div class="testimonial-img">
+              <ul class="list-inline mb-0">
+                <li
+                  v-for="(list, index) in images"
+                  :key="index"
+                  class="list-inline-item"
+                >
+                  <img
+                    :src="list.image"
+                    class="img-fluid client-img wow zoomIn"
+                    alt="image0"
+                  >
+                </li>
+              </ul>
+              <div class="dot-circle">
+                <div class="effect-circle" />
+              </div>
+              <div class="main-circle">
+                <div class="circle-bg">
+                  <img src="@/assets/xebra-tech/xt-logo.png" alt="Xebra Tech">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 </template>
+<script>
+export default {
+  name: 'Testimonial',
+  data () {
+    return {
+      List: [
+        {
+          name: 'Herman Combrink',
+          design: 'Architech/Developer',
+          description:
+            'Specializing in software development contracting and cloud architecture. With 16+ years experience in front-line tech companies and certified DBA and Azure Cloud Architect I strive to bring value and agility to my customers'
+        },
+        {
+          name: 'Hamilton, NZ Based',
+          design: 'Kiwi Resident',
+          description:
+            'Born in South Africa and based in NZ I have worked with a wide variaty of cultures both onsite and remote. Leading teams with bringing people, process and technological tools together.'
+        },
+        {
+          name: 'Adaptability',
+          design: 'Adopting the right tools at the right time is key',
+          description:
+            'With over 1500 service providers and products listed by the CNCF, choosing the right stack for a company in the ever expanding technology landscape, is vital to its strategy and success.'
+        }
+      ],
+
+      images: [
+        { image: require('@/assets/tech/vuejs.png') },
+        { image: require('@/assets/tech/netcore.png') },
+        { image: require('@/assets/tech/sqlserver.png') },
+        { image: require('@/assets/tech/docker.png') },
+        { image: require('@/assets/tech/azure.png') },
+        { image: require('@/assets/tech/k8.png') },
+        { image: require('@/assets/tech/powerbi.png') },
+        { image: require('@/assets/tech/elk.png') }
+      ]
+    }
+  }
+}
+</script>
+<style scoped>
+.sofbox-gradient-bg-top {
+  background-image: url(../../assets/sofbox-v2/images/home-1/15.png);
+  background-position: 0 0 !important;
+  background-repeat: no-repeat !important;
+}
+</style>

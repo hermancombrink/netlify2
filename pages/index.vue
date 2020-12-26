@@ -1,53 +1,125 @@
 <template>
-  <div class="main-content">
-    <Home />
-    <HowItWork />
-    <AboutUs />
-    <AboutFeature />
-    <WhyChooseUs />
-    <Feature />
-    <Team />
-    <Testimonial />
-    <Pricing />
-    <Blogs />
-    <Client />
-    <Footer />
+  <div>
+    <Home id="iq-home" />
+    <div class="main-content pt-5 overflow">
+      <about id="iq-about" />
+      <feature id="iq-feature" />
+      <testimonial id="iq-team" />
+      <pricing />
+      <blog />
+      <contact id="iq-contact" />
+    </div>
+    <VTwoFooterStyle2
+      :footer-logo="footerLogo"
+      :footer-text="footerText"
+      :footer-title="footerTitle"
+      :footer-description="footerDescription"
+    >
+      <template v-slot:menu>
+        <ul>
+          <li>
+            <a class="text-white" href="javascript:void(0)">About Us</a>
+          </li>
+          <li>
+            <a class="text-white" href="javascript:void(0)">Theme</a>
+          </li>
+          <li>
+            <a class="text-white" href="javascript:void(0)">Features</a>
+          </li>
+          <li>
+            <a class="text-white" href="javascript:void(0)">Pricing</a>
+          </li>
+          <li>
+            <a class="text-white" href="javascript:void(0)">Blog</a>
+          </li>
+        </ul>
+      </template>
+      <template v-slot:aboutus>
+        <ul>
+          <li>
+            <a class="text-white" href="javascript:void(0)">About Sofbox</a>
+          </li>
+          <li>
+            <a class="text-white" href="javascript:void(0)">Roadmap</a>
+          </li>
+          <li>
+            <a class="text-white" href="javascript:void(0)">How it Work</a>
+          </li>
+          <li>
+            <a class="text-white" href="javascript:void(0)">Team</a>
+          </li>
+          <li>
+            <a class="text-white" href="javascript:void(0)">News</a>
+          </li>
+        </ul>
+      </template>
+      <template v-slot:testimonial>
+        <div>
+          <VTwoTestimonialCarousel :testimonial-list="List" />
+        </div>
+      </template>
+    </VTwoFooterStyle2>
   </div>
 </template>
-
 <script>
 import { sofbox } from '@/assets/app/app'
-import HowItWork from '@/components/Sofbox-sass/HowItWork'
-import AboutUs from '@/components/Sofbox-sass/AboutUs'
-import AboutFeature from '@/components/Sofbox-sass/AboutFeature'
-import Footer from '@/components/Sofbox-sass/Footer'
-import WhyChooseUs from '@/components/Sofbox-sass/WhyChooseUs'
-import Feature from '@/components/Sofbox-sass/Feature'
-import Team from '@/components/Sofbox-sass/Team'
-import Testimonial from '@/components/Sofbox-sass/Testimonial'
-import Pricing from '@/components/Sofbox-sass/Pricing'
-import Blogs from '@/components/Sofbox-sass/Blogs'
-import Client from '@/components/Sofbox-sass/Client'
-import Home from '@/components/Sofbox-sass/Home'
+import about from '@/components/saas-main/about'
+import Home from '@/components/saas-main/home'
+import feature from '@/components/saas-main/feature'
+import blog from '@/components/saas-main/blog'
+import contact from '@/components/saas-main/contact'
+import testimonial from '@/components/saas-main/testimonial'
+import Pricing from '@/components/saas-main/pricing'
+import footerLogo from '@/assets/sofbox-v2/images/home-2/logo-white.png'
 export default {
-  name: 'Index',
-  layout: 'SofboxSass',
+  layout: 'SaasMain',
   components: {
     Home,
-    Client,
-    Blogs,
+    about,
+    feature,
+    testimonial,
     Pricing,
-    Testimonial,
-    Team,
-    Feature,
-    HowItWork,
-    AboutUs,
-    AboutFeature,
-    Footer,
-    WhyChooseUs
+    blog,
+    contact
+  },
+  data () {
+    return {
+      footerLogo,
+      footerText:
+        'It is a long established fact that a reader will be distracted by the readable content.',
+      footerTitle: 'Ready to get started?',
+      footerDescription:
+        'It is a long established fact that a page when looking at its layout.',
+      List: [
+        {
+          name: 'Walhan Bobe',
+          design: 'CEO Sofbox',
+          image: require('@/assets/sofbox-v2/images/home-2/215.jpeg'),
+          description:
+            'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium incididunt ut labore et dolore Sed omnis iste ut perspiciatis.'
+        },
+        {
+          name: 'Walhan Bobe',
+          design: 'CEO Sofbox',
+          image: require('@/assets/sofbox-v2/images/home-2/216.jpeg'),
+          description:
+            'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium incididunt ut labore et dolore Sed omnis iste ut perspiciatis.'
+        },
+        {
+          name: 'Walhan Bobe',
+          design: 'CEO Sofbox',
+          image: require('@/assets/sofbox-v2/images/home-2/217.jpeg'),
+          description:
+            'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium incididunt ut labore et dolore Sed omnis iste ut perspiciatis.'
+        }
+      ]
+    }
   },
   mounted () {
-    sofbox.index()
+    setTimeout(function () {
+      sofbox.index()
+      sofbox.initRevSliderSaasMain()
+    }, 1000)
   }
 }
 </script>
