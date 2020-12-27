@@ -57,6 +57,7 @@ export default {
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
     '@nuxtjs/axios',
+    '@nuxt/content',
     '@nuxtjs/pwa'
   ],
   /*

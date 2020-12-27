@@ -7,6 +7,7 @@
       <blog />
       <contact id="iq-contact" />
     </div>
+
     <VTwoFooterStyle2
       :footer-logo="footerLogo"
       :footer-text="''"
@@ -37,7 +38,6 @@ export default {
     }
   },
   mounted () {
-    console.log(this.$moment)
     setTimeout(function () {
       sofbox.index()
       sofbox.initRevSliderSaasMain()

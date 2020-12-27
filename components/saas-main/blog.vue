@@ -6,7 +6,7 @@
           <VTwoSectionTitle :title-section-prop="titleSectionProp" />
         </div>
         <div class="col-lg-12">
-          <VTwoPost :postList="List" />
+          <VTwoPost :post-list="articles" />
         </div>
       </div>
     </div>
@@ -15,20 +15,20 @@
 <script>
 export default {
   name: 'Blog',
+  async fetch () {
+    this.articles = await this.$content('articles')
+      .sortBy('createdAt', 'desc')
+      .limit(6)
+      .fetch()
+  },
+
   data () {
     return {
       titleSectionProp: {
         title: 'Latest Posts',
-        description: 'If you are planning on developing a product landing.'
+        description: 'Concepts and ideas worth a mention'
       },
-
-      List: [
-        { title: 'Life Lack Meaning', description: 'It is a long established fact that a reader will be distracted by the readable.', datetime: 'November 28, 2019', image: require('../../assets/sofbox-v2/images/home-1/16.jpg') },
-        { title: 'Life Lack Meaning', description: 'It is a long established fact that a reader will be distracted by the readable.', datetime: 'November 28, 2019', image: require('../../assets/sofbox-v2/images/home-1/17.jpg') },
-        { title: 'Life Lack Meaning', description: 'It is a long established fact that a reader will be distracted by the readable.', datetime: 'November 28, 2019', image: require('../../assets/sofbox-v2/images/home-1/18.jpg') },
-        { title: 'Life Lack Meaning', description: 'It is a long established fact that a reader will be distracted by the readable.', datetime: 'November 28, 2019', image: require('../../assets/sofbox-v2/images/home-1/19.jpg') },
-        { title: 'Life Lack Meaning', description: 'It is a long established fact that a reader will be distracted by the readable.', datetime: 'November 28, 2019', image: require('../../assets/sofbox-v2/images/home-1/20.jpg') }
-      ]
+      articles: []
     }
   }
 }

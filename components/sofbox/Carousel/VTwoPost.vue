@@ -11,25 +11,31 @@
     data-items-mobile="2"
     data-items-mobile-sm="1"
   >
-    <div v-for="(list,index) in postList" :key="index" class="item">
+    <div v-for="(list, index) in postList" :key="index" class="item">
       <div class="iq-blog-box">
         <div class="iq-blog-image clearfix">
-          <img :src=" list.image " class="img-fluid center-block" alt="blogimage1">
+          <img
+            :src="list.image"
+            class="img-fluid center-block"
+            alt="blogimage1"
+          >
           <div class="iq-blog-detail">
             <div class="iq-blog-meta">
               <ul>
                 <li class="list-inline-item">
-                  <span class="screen-reader-text">Posted on</span> <a
-                    href="#"
-                    rel="bookmark"
-                  >{{ list.datetime }}</a>
+                  <span class="screen-reader-text">Posted on</span>
+                  <b-link :to="list.path" rel="bookmark">
+                    {{ $moment(list.createdAt).format('YYYY-MMM-DD') }}
+                  </b-link>
                 </li>
               </ul>
             </div>
             <div class="blog-title">
-              <a href="#">
-                <h5 class="mb-2">{{ list.title }}</h5>
-              </a>
+              <b-link :to="list.path">
+                <h5 class="mb-2">
+                  {{ list.title }}
+                </h5>
+              </b-link>
             </div>
             <p class="mb-0">
               {{ list.description }}
@@ -49,6 +55,5 @@ export default {
       type: Array
     }
   }
-
 }
 </script>

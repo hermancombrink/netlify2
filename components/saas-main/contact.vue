@@ -44,16 +44,26 @@
             <div class="deatils-social mt-5 mb-4">
               <ul class="share-social list-inline p-0">
                 <li class="list-inline-item">
-                  <a href="#"><i class="fab fa-facebook-f" /></a>
+                  <a
+                    href="https://www.facebook.com/herman.combrink.5"
+                  ><i
+                    class="fab fa-facebook-f"
+                  /></a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#"><i class="fab fa-twitter" /></a>
+                  <a
+                    href="https://github.com/hermancombrink
+"
+                  ><i
+                    class="fab fa-github"
+                  /></a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#"><i class="fab fa-github" /></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#"><i class="fab fa-instagram" /></a>
+                  <a
+                    href="https://www.linkedin.com/in/herman-combrink-497582108/"
+                  ><i
+                    class="fab fa-linkedin"
+                  /></a>
                 </li>
               </ul>
             </div>
