@@ -32,9 +32,9 @@ export default {
           title: 'Home',
           active: true
         },
-        { href: '#iq-about', title: 'About' },
-        { href: '#iq-feature', title: 'Services' },
-        { href: '#iq-blog', title: 'Blog' },
+        { href: '#iq-about', title: 'About XT' },
+        { href: '#iq-feature', title: 'About Me' },
+        { href: '#iq-blog', title: 'XT Blog' },
         { href: '#iq-contact', title: 'Contact Me' }
       ]
     }
