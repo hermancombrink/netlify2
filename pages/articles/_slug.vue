@@ -36,7 +36,7 @@
 <script>
 import { sofbox } from '@/assets/app/app'
 import Footer from '@/components/Sofbox-sass/Footer'
-import Detail from '@/components/main/Blog-Detail'
+import Detail from '@/components/main/blog-detail'
 export default {
   components: {
     Footer,
