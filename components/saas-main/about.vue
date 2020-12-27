@@ -79,7 +79,7 @@ export default {
         class: 'text-left',
         title: 'Solution design is art more than science',
         description:
-          'Design and building long lasting value software an iterative piece of art. Every evolving along with the needs of the end user. Xebra Tech strives to achieve this'
+          'Design and building long lasting value software is an iterative piece of art. Every evolving along with the needs of the end user. Xebra Tech strives to achieve this'
       },
 
       List: [
@@ -88,21 +88,21 @@ export default {
           icon: 'flaticon flaticon-project-management',
           hoverClass: 'purple-hover purple-arrow',
           description:
-            'A solution should bring satisfaction to all users working with it'
+            'A solution should bring satisfaction to all users working with it, including developers, testers and support personnel'
         },
         {
           title: 'Seperation of concern',
           icon: 'flaticon flaticon-business',
           hoverClass: 'org-hover org-arrow',
           description:
-            'Each component should be extensible, replaceable and strive to do 1 thing well'
+            'Each component should be extensible, replaceable and strive to do 1 thing well. Identifying new boundries as the product grows and refactoring at the right time'
         },
         {
           title: 'Provide insight to its users',
           icon: 'flaticon flaticon-cloud',
           hoverClass: 'green-hover purple-arrow',
           description:
-            'The data and meta data produced should be easily accessible to a systems end users'
+            'The data and meta data produced should be easily accessible to a systems end users. Diagnotic, descriptive, predictive, and even prescriptive analytics should be a self service'
         }
       ],
       service1: [
