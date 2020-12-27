@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Home id="iq-home" />
+    <home id="iq-home" />
     <div class="main-content pt-5 overflow">
       <about id="iq-about" />
       <feature id="iq-feature" />
@@ -8,7 +8,7 @@
       <contact id="iq-contact" />
     </div>
 
-    <VTwoFooterStyle2
+    <FooterStyle01
       :footer-logo="footerLogo"
       :footer-text="''"
       :footer-title="''"
@@ -19,7 +19,7 @@
 <script>
 import { sofbox } from '@/assets/app/app'
 import about from '@/components/main/about'
-import Home from '@/components/main/home'
+import home from '@/components/main/home'
 import feature from '@/components/main/feature'
 import blog from '@/components/main/blog'
 import contact from '@/components/main/contact'
@@ -27,7 +27,7 @@ import footerLogo from '@/assets/sofbox-v2/images/home-2/logo-white.png'
 
 export default {
   components: {
-    Home,
+    home,
     about,
     feature,
     blog,
@@ -44,9 +44,36 @@ export default {
       sofbox.initRevSliderSaasMain()
     }, 1000)
   },
-  head: {
-    title: 'Xebra Tech Ltd'
-  },
-  layout: 'XTMain'
+  layout: 'XTMain',
+  head () {
+    return {
+      title: 'Xebra Tech Ltd',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Developer Portfolio'
+        },
+        // Open Graph
+        { hid: 'og:title', property: 'og:title', content: 'Xebra Tech Ltd' },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: 'Developer Portfolio'
+        },
+        // Twitter Card
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: 'Xebra Tech Ltd'
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: 'Developer Portfolio'
+        }
+      ]
+    }
+  }
 }
 </script>

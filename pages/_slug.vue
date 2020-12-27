@@ -10,7 +10,7 @@
 export default {
   async asyncData ({ $content, params, error }) {
     const slug = params.slug || 'index'
-    const page = await $content(slug)
+    const page = await $content(`articles/${slug}`)
       .fetch()
       // eslint-disable-next-line handle-callback-err
       .catch((err) => {
@@ -19,6 +19,36 @@ export default {
 
     return {
       page
+    }
+  },
+  head () {
+    return {
+      title: this.page.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.page.description
+        },
+        // Open Graph
+        { hid: 'og:title', property: 'og:title', content: this.page.title },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.page.description
+        },
+        // Twitter Card
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: this.page.title
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: this.page.description
+        }
+      ]
     }
   }
 }

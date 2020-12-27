@@ -1,10 +1,5 @@
 <template>
   <div>
-    <div id="loading">
-      <div id="loading-center">
-        <img src="@/assets/xebra-tech/xt-logo-w.png" alt="loader">
-      </div>
-    </div>
     <HeaderStyle01
       :logo-img="logoWhite"
       :nav-item-list="navItems"
@@ -13,6 +8,7 @@
       :logo-white="logo"
     />
     <nuxt />
+
     <ScrollTop01 />
   </div>
 </template>
@@ -20,7 +16,7 @@
 import logoImg from '@/assets/xebra-tech/xt-logo-w.png'
 import logoWhite from '@/assets/sofbox-v2/images/logo-white.png'
 export default {
-  name: 'XTMain',
+  name: 'XTContent',
   data () {
     return {
       styleLogo: false,
@@ -28,14 +24,14 @@ export default {
       logoWhite,
       navItems: [
         {
-          href: '#iq-home',
+          href: '/',
           title: 'Home',
           active: true
         },
-        { href: '#iq-about', title: 'About XT' },
-        { href: '#iq-feature', title: 'About Me' },
-        { href: '#iq-blog', title: 'XT Blog' },
-        { href: '#iq-contact', title: 'Contact Me' }
+        { href: '/', title: 'About XT' },
+        { href: '/', title: 'About Me' },
+        { href: '/', title: 'XT Blog' },
+        { href: '/', title: 'Contact Me' }
       ]
     }
   },

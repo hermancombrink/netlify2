@@ -3,10 +3,10 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <VTwoSectionTitle :title-section-prop="titleSectionProp" />
+          <SectionTitle01 :title-section-prop="titleSectionProp" />
         </div>
         <div class="col-lg-12">
-          <VTwoPost :post-list="articles" />
+          <BlogPost01 :post-list="articles" />
         </div>
       </div>
     </div>
