@@ -18,12 +18,13 @@
 </template>
 <script>
 import { sofbox } from '@/assets/app/app'
-import about from '@/components/saas-main/about'
-import Home from '@/components/saas-main/home'
-import feature from '@/components/saas-main/feature'
-import blog from '@/components/saas-main/blog'
-import contact from '@/components/saas-main/contact'
+import about from '@/components/main/about'
+import Home from '@/components/main/home'
+import feature from '@/components/main/feature'
+import blog from '@/components/main/blog'
+import contact from '@/components/main/contact'
 import footerLogo from '@/assets/sofbox-v2/images/home-2/logo-white.png'
+
 export default {
   components: {
     Home,
