@@ -47,6 +47,6 @@ export default {
   head: {
     title: 'Xebra Tech Ltd'
   },
-  layout: 'SaasMain'
+  layout: 'XTMain'
 }
 </script>

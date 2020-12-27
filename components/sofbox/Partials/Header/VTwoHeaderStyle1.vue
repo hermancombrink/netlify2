@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-sm-12">
           <nav class="navbar navbar-expand-lg navbar-light">
-            <nuxt-link class="navbar-brand" to="/saas-main">
+            <nuxt-link class="navbar-brand" to="/">
               <img
                 :id="styledLogo ? 'logo_img' : ''"
                 :src="logoImg"
