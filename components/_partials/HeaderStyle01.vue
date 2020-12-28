@@ -41,29 +41,28 @@
                     :key="index"
                     class="nav-item dropdown"
                   >
-                    <a
+                    <b-link
                       :id="'navbarDropdown' + index"
-                      class="nav-link dropdown-toggle"
-                      href="#"
+                      :to="'/'"
                       role="button"
                       data-toggle="dropdown"
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
                       {{ option.title }}
-                    </a>
+                    </b-link>
                     <div
                       class="dropdown-menu"
                       :aria-labelledby="'navbarDropdown' + index"
                     >
-                      <nuxt-link
+                      <b-link
                         v-for="(child, index1) in option.child"
                         :key="index1"
                         :to="child.href"
                         class="dropdown-item"
                       >
                         {{ child.title }}
-                      </nuxt-link>
+                      </b-link>
                     </div>
                   </li>
                   <li v-else :key="index" class="nav-item">
@@ -79,9 +78,9 @@
                     >
                       {{ option.title }}
                     </a>
-                    <nuxt-link v-else :to="option.href" class="nav-link">
+                    <b-link v-else :to="option.href" class="nav-link">
                       {{ option.title }}
-                    </nuxt-link>
+                    </b-link>
                   </li>
                 </template>
               </ul>

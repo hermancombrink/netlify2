@@ -7,7 +7,7 @@ title: Resume
 description: Test Blog Page
 
 ---
-# About page
+# Resume page
 
 I am the about page, you can edit me in <code>content/about.md</code>. This is another test for this content
 

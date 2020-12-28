@@ -1,33 +1,39 @@
 <template>
   <div class="blog-img">
-    <img :src="page.image" class="img-fluid mb-3" alt="Page Header">
-    <div class="blog-box">
-      <ul class="d-inline-block float-left">
-        <li class="d-inline">
-          <span class="pl-2 text-white">{{ page.author.name }}</span>
-        </li>
-        <li class="d-inline ml-3">
-          <a
-            href="javascript:void(0)"
-            class=""
-          ><i class="far fa-calendar-alt" />
-            {{ $moment(page.createdAt).format('YYYY-MMM-DD') }}</a>
-        </li>
-      </ul>
-    </div>
-    <h3 class="mb-3">
-      {{ page.title }}
-    </h3>
-    <div class="address text-white mb-3">
-      <a
-        href="javascript:void(0)"
-      ><i class="fas fa-tags mr-3" /> {{ page.description }}</a>
-    </div>
+    <b-row>
+      <b-col lg="6">
+        <img
+          :src="page.image"
+          class="img-fluid mb-3 head-img"
+          alt="Page Header"
+        >
+      </b-col>
+      <b-col lg="6">
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <h4>
+              {{ page.title }}
+            </h4>
+          </li>
+          <li>
+            <span class="text-white text-muted">{{ page.author.name }}</span>
+            <small class="form-text"> {{ page.author.bio }}</small>
+          </li>
+          <li>
+            <small>
+              <i class="far fa-calendar-alt" />
+              {{ $moment(page.createdAt).format('DD MMMM YYYY') }}
+            </small>
+          </li>
+          <li>
+            <small> <i class="fas fa-tags" /> {{ page.description }} </small>
+          </li>
+        </ul>
+      </b-col>
+    </b-row>
     <p class="mb-5">
       <nuxt-content :document="page" />
     </p>
-
-    <div class="clearfix" />
   </div>
 </template>
 <script>
@@ -41,3 +47,4 @@ export default {
   }
 }
 </script>
+<style scoped></style>

@@ -1,46 +1,36 @@
 <template>
   <div>
-    <BlackBannerStyle1 title="Blog Detail right Sidebar">
-      <template v-slot:bannerLinks>
-        <ol class="breadcrumb title">
-          <li class="breadcrumb-item">
-            <a href="index.html" class="">Home</a>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">
-            Blogs
-          </li>
-        </ol>
-      </template>
-    </BlackBannerStyle1>
     <div class="main-content">
       <section class="iq-blogs">
         <div class="container">
           <div class="row">
             <div class="col-md-8">
-              <Detail :page="page" />
+              <blog-detail :page="page" />
             </div>
             <div class="col-lg-4">
-              <BlackSidebar />
+              <SideBar01 />
             </div>
           </div>
         </div>
       </section>
-      <Footer />
     </div>
-    <h1>{{ page.title }}</h1>
-    <p>{{ page.description }}</p>
-    <nuxt-content :document="page" />
+
+    <FooterStyle01
+      :footer-logo="footerLogo"
+      :footer-text="''"
+      :footer-title="''"
+      :footer-description="''"
+    />
   </div>
 </template>
 
 <script>
 import { sofbox } from '@/assets/app/app'
-import Footer from '@/components/Sofbox-sass/Footer'
-import Detail from '@/components/main/blog-detail'
+import blogDetail from '@/components/main/blog-detail'
+import footerLogo from '@/assets/sofbox-v2/images/home-2/logo-white.png'
 export default {
   components: {
-    Footer,
-    Detail
+    blogDetail
   },
   async asyncData ({ $content, params, error }) {
     const slug = params.slug || 'index'
@@ -54,6 +44,9 @@ export default {
     return {
       page
     }
+  },
+  data () {
+    return { footerLogo }
   },
   mounted () {
     sofbox.index()

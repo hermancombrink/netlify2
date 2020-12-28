@@ -4,7 +4,7 @@ author:
   bio: All about Benjamin
 image: /home-1/17.jpg
 title: Test
-description: Test Blog Page
+description: ABCD
 
 ---
 # About page
