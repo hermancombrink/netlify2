@@ -1,16 +1,37 @@
 <template>
   <div>
-    <h1>{{ page.title }}</h1>
-    <p>{{ page.description }}</p>
-    <nuxt-content :document="page" />
+    <div class="main-content">
+      <section class="iq-blogs">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <page-detail :page="page" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <FooterStyle01
+      :footer-logo="footerLogo"
+      :footer-text="''"
+      :footer-title="''"
+      :footer-description="''"
+    />
   </div>
 </template>
 
 <script>
+import { sofbox } from '@/assets/app/app'
+import pageDetail from '@/components/main/page-detail'
+import footerLogo from '@/assets/sofbox-v2/images/home-2/logo-white.png'
 export default {
+  components: {
+    pageDetail
+  },
   async asyncData ({ $content, params, error }) {
     const slug = params.slug || 'index'
-    const page = await $content(`articles/${slug}`)
+    const page = await $content(`${slug}`)
       .fetch()
       // eslint-disable-next-line handle-callback-err
       .catch((err) => {
@@ -21,6 +42,13 @@ export default {
       page
     }
   },
+  data () {
+    return { footerLogo }
+  },
+  mounted () {
+    sofbox.index()
+  },
+  layout: 'XTContent',
   head () {
     return {
       title: this.page.title,
