@@ -7,7 +7,7 @@
       <div class="iq-widget mb-3">
         <div class="iq-sidebar-widget">
           <div class="iq-widget-search position-relative">
-            <b-input-group>
+            <b-input-group size="sm">
               <template #append>
                 <b-input-group-text>
                   <i class="fa fa-search" />

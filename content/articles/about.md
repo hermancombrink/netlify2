@@ -2,7 +2,7 @@
 author:
   name: Benjamin
   bio: All about Benjamin
-image: /home-1/17.jpg
+image: /home-1/16.jpg
 title: Test
 description: ABCD
 
