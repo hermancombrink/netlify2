@@ -1,14 +1,12 @@
 ---
 author:
-  name: Benjamin
-  bio: All about Benjamin
+  name: Herman
+  bio: Software Developer / Solutions Architect
 image: /home-1/17.jpg
 title: Resume
 description: Test Blog Page
 
 ---
 # Resume page
-
-I am the about page, you can edit me in <code>content/about.md</code>. This is another test for this content
-
+This is my resume page.... write some stuff here
 Link to [home](/)

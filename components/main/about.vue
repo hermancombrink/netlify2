@@ -24,10 +24,13 @@
               </div>
             </div>
           </div>
-          <a
+          <b-btn
+            variant="outline-dark"
+            size="sm"
             class="button gradient-btn button-icon mt-5"
-            href="#"
-          ><span class="btn-effect"> Read More</span></a>
+          >
+            Read More
+          </b-btn>
         </div>
         <div class="col-lg-6 mt-5 mt-lg-0">
           <div
@@ -56,14 +59,6 @@
                 </p>
               </div>
             </div>
-          </div>
-          <div class="layer_wrap iq-objects style-one right-top">
-            <span class="iq-objects-01">
-              <img
-                src="../../assets/sofbox-v2/images/home-4/400.png"
-                alt="drive02"
-              >
-            </span>
           </div>
         </div>
       </div>

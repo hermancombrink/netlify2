@@ -1,14 +1,14 @@
 <template>
   <section id="iq-blog" class="pb-70">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
+      <b-row>
+        <b-col lg="12">
           <SectionTitle01 :title-section-prop="titleSectionProp" />
-        </div>
-        <div class="col-lg-12">
+        </b-col>
+        <b-col lg="12">
           <BlogPost01 :post-list="articles" />
-        </div>
-      </div>
+        </b-col>
+      </b-row>
     </div>
   </section>
 </template>

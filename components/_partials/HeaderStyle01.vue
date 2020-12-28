@@ -14,7 +14,7 @@
               <img class="img-fluid sticky-logo" :src="logoWhite" alt="img">
             </nuxt-link>
             <button
-              class="navbar-toggler"
+              class="navbar-toggler mr-4"
               type="button"
               data-toggle="collapse"
               data-target="#navbarSupportedContent"

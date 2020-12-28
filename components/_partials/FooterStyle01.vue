@@ -13,8 +13,7 @@
       <div class="offset-sm-2 col-lg-5 col-md-6 col-sm-6">
         <div class="logo">
           <div class="iq-copyright mt-5 pt-5 text-white">
-            Copyright @ {{ $moment().format('YYYY') }}. Build with NuxtJS and
-            hosted by Netlify
+            Copyright @ {{ $moment().format('YYYY') }}.
           </div>
         </div>
       </div>

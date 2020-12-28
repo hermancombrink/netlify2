@@ -29,21 +29,7 @@
         </div>
         <div class="col-lg-6">
           <SectionTitle01 :title-section-prop="titleSectionProp" />
-          <div class="row">
-            <div class="layer_wrap iq-objects style-one right-top">
-              <span class="iq-objects-01">
-                <img
-                  src="../../assets/sofbox-v2/images/home-4/400.png"
-                  alt="drive02"
-                >
-              </span>
-            </div>
-          </div>
         </div>
-        <a
-          class="button gradient-btn button-icon mt-5"
-          href="#"
-        ><span class="btn-effect"> Read More</span></a>
       </div>
     </div>
   </section>
