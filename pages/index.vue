@@ -1,7 +1,7 @@
 <template>
   <div>
-    <home id="iq-home" />
     <div class="main-content pt-5 overflow">
+      <home id="iq-home" />
       <about id="iq-about" />
       <feature id="iq-feature" />
       <blog />

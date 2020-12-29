@@ -78,7 +78,8 @@ export default {
     babel: { compact: true }
   },
   server: {
-    port: 5700 // default: 3000
+    port: 5700, // default: 3000
+    host: '0.0.0.0' // default: localhost
   },
   moment: {},
   vue: {

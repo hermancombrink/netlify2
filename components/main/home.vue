@@ -114,4 +114,7 @@ export default {
   background-position: 0 0 !important;
   background-repeat: no-repeat !important;
 }
+.testimonial-circle {
+  overflow: hidden;
+}
 </style>
