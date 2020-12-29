@@ -37,7 +37,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 p-7 mb-5 mt-5">
           <div class="testimonial-circle postion-relative">
             <div class="testimonial-img">
               <ul class="list-inline mb-0">
@@ -114,7 +114,7 @@ export default {
   background-position: 0 0 !important;
   background-repeat: no-repeat !important;
 }
-.testimonial-circle {
+.testimonial-img .list-inline {
   overflow: hidden;
 }
 </style>

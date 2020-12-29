@@ -4742,16 +4742,6 @@ Testimonial Circle
   width: 550px;
   height: 550px;
 }
-.testimonial-circle .testimonial-img:before {
-  content: "";
-  border: 1px solid rgba(30, 30, 30, 0.1);
-  -webkit-animation: anti-clockwise 25s linear 100000;
-  animation: anti-clockwise 25s linear 100000;
-  width: 500px;
-  height: 500px;
-  border-radius: 900px;
-  display: inline-block;
-}
 .testimonial-circle .testimonial-img {
   margin: 0 auto;
   display: block;
