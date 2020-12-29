@@ -1,5 +1,5 @@
 <template>
-  <section id="iq-blog" class="pb-70">
+  <section id="iq-blog" class="pb-0">
     <div class="container">
       <b-row>
         <b-col lg="12">

@@ -1,5 +1,5 @@
 <template>
-  <section id="iq-feature" class="popup-images align-left pt-0 pb-4">
+  <section id="iq-feature" class="popup-images align-left pt-0 pb-0">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6">

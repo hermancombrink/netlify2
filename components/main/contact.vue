@@ -25,7 +25,7 @@
             tabindex="0"
           />
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 mt-3">
           <div class="">
             <img
               class="img-fluid"
