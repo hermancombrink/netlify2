@@ -4,7 +4,7 @@
       <section class="iq-blogs">
         <div class="container">
           <div class="row">
-            <div class="col-md-8">
+            <div class="col-lg-8">
               <blog-detail :page="page" />
             </div>
             <div class="col-lg-4">
@@ -13,6 +13,7 @@
           </div>
         </div>
       </section>
+      <contact id="iq-contact" />
     </div>
 
     <FooterStyle01
@@ -28,9 +29,12 @@
 import { sofbox } from '@/assets/app/app'
 import blogDetail from '@/components/main/blog-detail'
 import footerLogo from '@/assets/sofbox-v2/images/home-2/logo-white.png'
+import contact from '@/components/main/contact'
+
 export default {
   components: {
-    blogDetail
+    blogDetail,
+    contact
   },
   async asyncData ({ $content, params, error }) {
     const slug = params.slug || 'index'

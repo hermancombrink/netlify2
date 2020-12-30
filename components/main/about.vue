@@ -27,6 +27,7 @@
           <b-btn
             variant="outline-dark"
             size="sm"
+            :to="'/about-xt'"
             class="button gradient-btn button-icon mt-5"
           >
             Read More

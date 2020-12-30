@@ -10,6 +10,8 @@
           </div>
         </div>
       </section>
+
+      <contact id="iq-contact" />
     </div>
 
     <FooterStyle01
@@ -23,11 +25,14 @@
 
 <script>
 import { sofbox } from '@/assets/app/app'
+import contact from '@/components/main/contact'
+
 import pageDetail from '@/components/main/page-detail'
 import footerLogo from '@/assets/sofbox-v2/images/home-2/logo-white.png'
 export default {
   components: {
-    pageDetail
+    pageDetail,
+    contact
   },
   async asyncData ({ $content, params, error }) {
     const slug = params.slug || 'index'

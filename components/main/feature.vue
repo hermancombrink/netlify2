@@ -31,6 +31,14 @@
           <SectionTitle01 :title-section-prop="titleSectionProp" />
         </div>
       </div>
+      <b-btn
+        variant="outline-dark"
+        size="sm"
+        :to="'/about-me'"
+        class="button gradient-btn button-icon mt-5"
+      >
+        Read More
+      </b-btn>
     </div>
   </section>
 </template>

@@ -9,6 +9,14 @@
           <BlogPost01 :post-list="articles" />
         </b-col>
       </b-row>
+      <b-btn
+        variant="outline-dark"
+        size="sm"
+        :to="'/blog-list'"
+        class="button gradient-btn button-icon mt-5"
+      >
+        Read More
+      </b-btn>
     </div>
   </section>
 </template>

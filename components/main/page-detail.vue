@@ -1,12 +1,12 @@
 <template>
-  <div class="blog-img">
-    <b-row>
-      <b-col lg="6">
+  <div>
+    <b-row class="text-center">
+      <b-col lg="12">
         <ul class="list-unstyled">
           <li class="mb-2">
-            <h4>
+            <h1>
               {{ page.title }}
-            </h4>
+            </h1>
           </li>
           <li>
             <small>
@@ -17,9 +17,7 @@
         </ul>
       </b-col>
     </b-row>
-    <p class="mb-5">
-      <nuxt-content :document="page" />
-    </p>
+    <nuxt-content :document="page" />
   </div>
 </template>
 <script>

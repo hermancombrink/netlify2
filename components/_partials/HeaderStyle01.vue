@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-sm-12">
           <nav class="navbar navbar-expand-lg navbar-light">
-            <nuxt-link class="navbar-brand" to="/">
+            <b-link class="navbar-brand" to="/">
               <img
                 :id="styledLogo ? 'logo_img' : ''"
                 :src="logoImg"
@@ -12,7 +12,7 @@
                 alt="img"
               >
               <img class="img-fluid sticky-logo" :src="logoWhite" alt="img">
-            </nuxt-link>
+            </b-link>
             <button
               class="navbar-toggler"
               type="button"
@@ -43,7 +43,7 @@
                   >
                     <b-link
                       :id="'navbarDropdown' + index"
-                      :to="'/'"
+                      :to="option.href"
                       role="button"
                       data-toggle="dropdown"
                       aria-haspopup="true"

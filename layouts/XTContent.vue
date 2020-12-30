@@ -26,12 +26,28 @@ export default {
         {
           href: '/',
           title: 'Home',
-          active: true
+          active: true,
+          redirect: true
         },
-        { href: '/', title: 'About XT' },
-        { href: '/', title: 'About Me' },
-        { href: '/', title: 'XT Blog' },
-        { href: '/', title: 'Contact Me' }
+        {
+          href: '/about-xt',
+          title: 'About XT',
+          active: true,
+          redirect: true
+        },
+        {
+          href: '/about-me',
+          title: 'About Me',
+          active: true,
+          redirect: true
+        },
+        {
+          href: '/blog-list',
+          title: 'XT Blog',
+          active: true,
+          redirect: true
+        },
+        { href: '#iq-contact', title: 'Contact Me' }
       ]
     }
   },
