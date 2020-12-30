@@ -71,7 +71,6 @@ export default {
   data () {
     return {
       titleSectionProp: {
-        class: 'text-left',
         title: 'Solution design is art more than science',
         description:
           'Design and building long lasting value software is an iterative piece of art. Every evolving along with the needs of the end user. Xebra Tech strives to achieve this'

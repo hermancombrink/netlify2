@@ -25,7 +25,7 @@ export default {
   data () {
     return {
       titleSectionProp: {
-        title: 'Latest Posts',
+        title: 'Latest posts',
         description: 'Concepts and ideas worth a mention'
       },
       articles: []
