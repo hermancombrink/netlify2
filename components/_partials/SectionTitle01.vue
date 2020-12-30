@@ -6,6 +6,10 @@
     <p v-if="titleSectionProp.description" :class="titleSectionProp.descClass">
       {{ titleSectionProp.description }}
     </p>
+    <br v-if="titleSectionProp.description2">
+    <p v-if="titleSectionProp.description2" :class="titleSectionProp.descClass">
+      {{ titleSectionProp.description2 }}
+    </p>
   </div>
 </template>
 <script>

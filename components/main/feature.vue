@@ -40,10 +40,11 @@ export default {
   data () {
     return {
       titleSectionProp: {
-        class: 'text-left',
-        title: 'Get in touch with me',
+        title: 'A little about me',
         description:
-          'Father of 2 awesome boys and lucky to have the best wife/mother at my side. We are a tight knit family of 4 making to most of our time together'
+          'Father of 2 awesome boys and lucky to have the best wife/mother at my side. We are a tight knit family of 4 making to most of our time together',
+        description2:
+          'With a passion for the running world as well as the software development evolution I enjoy time at the desk as well as away from it on the dirt roads of New Zealand'
       }
     }
   }
