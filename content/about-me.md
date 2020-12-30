@@ -1,10 +1,5 @@
 ---
-author:
-  name: Benjamin
-  bio: All about Benjamin
-image: /home-1/17.jpg
-title: Test
-description: ABCD
+title: About Me
 
 ---
 

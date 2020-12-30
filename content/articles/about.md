@@ -1,7 +1,7 @@
 ---
 author:
-  name: Benjamin
-  bio: All about Benjamin
+  name: Herman
+  bio: Software Developer / Solutions Architect
 image: /home-1/16.jpg
 title: Test
 description: ABCD
