@@ -43,7 +43,7 @@ export default {
         class: 'text-left',
         title: 'Get in touch with me',
         description:
-          'Father of 2 awesome boys and lucky to have the best wife/mother at my side. We are a tight nit family of 4 making to most of our time together'
+          'Father of 2 awesome boys and lucky to have the best wife/mother at my side. We are a tight knit family of 4 making to most of our time together'
       }
     }
   }

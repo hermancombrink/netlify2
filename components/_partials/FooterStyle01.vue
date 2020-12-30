@@ -10,7 +10,7 @@
     "
   >
     <div class="logo">
-      <div class="iq-copyright mt-5 pt-5 text-white">
+      <div class="iq-copyright pl-5 mt-5 pt-5 text-white">
         Copyright @ {{ $moment().format('YYYY') }}.
       </div>
     </div>
@@ -29,3 +29,8 @@ export default {
   }
 }
 </script>
+<style scoped>
+.iq-copyright {
+  position: relative;
+}
+</style>
