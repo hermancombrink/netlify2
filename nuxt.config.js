@@ -81,10 +81,6 @@ export default {
     port: 5700, // default: 3000
     host: '0.0.0.0' // default: localhost
   },
-  pwa: {
-    targetDir: 'ic',
-    fileName: 'ic_fav.png'
-  },
   moment: {},
   vue: {
     config: {
