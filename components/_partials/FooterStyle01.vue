@@ -11,7 +11,7 @@
   >
     <div class="logo">
       <div class="iq-copyright pl-5 mt-5 pt-5 text-white">
-        Copyright @ {{ $moment().format('YYYY') }}.
+        <small> Copyright @ {{ $moment().format('YYYY') }} </small>
       </div>
     </div>
   </footer>

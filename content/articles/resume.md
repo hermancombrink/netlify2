@@ -2,7 +2,7 @@
 author:
   name: Herman
   bio: Software Developer / Solutions Architect
-image: /home-1/18.jpg
+image: /blog/18.jpg
 title: Resume
 description: Test Blog Page
 

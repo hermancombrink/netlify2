@@ -29,7 +29,7 @@
 
 <script>
 import { sofbox } from '@/assets/app/app'
-import BlogListing from '@/components/Sofbox-sass/BlogListing'
+import BlogListing from '@/components/main/blog-listing'
 import contact from '@/components/main/contact'
 
 export default {
@@ -41,38 +41,7 @@ export default {
   },
   data () {
     return {
-      blogList: [
-        {
-          media: require('@/assets/sofbox-sass-black/images/blog/03.jpg'),
-          title: 'Fully Dedicated Finding',
-          // tslint:disable-next-line:max-line-length
-          description:
-            'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
-          createddate: 'April 05, 2019',
-          likes: '60',
-          comments: '20'
-        },
-        {
-          media: require('@/assets/sofbox-sass-black/images/blog/03.jpg'),
-          title: 'Fully Dedicated Finding',
-          // tslint:disable-next-line:max-line-length
-          description:
-            'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
-          createddate: 'April 05, 2019',
-          likes: '60',
-          comments: '20'
-        },
-        {
-          media: require('@/assets/sofbox-sass-black/images/blog/03.jpg'),
-          title: 'Fully Dedicated Finding',
-          // tslint:disable-next-line:max-line-length
-          description:
-            'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
-          createddate: 'April 05, 2019',
-          likes: '60',
-          comments: '20'
-        }
-      ]
+      blogList: []
     }
   },
   mounted () {

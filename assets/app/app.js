@@ -9,7 +9,7 @@ if (typeof window !== 'undefined') {
   window.jQuery = $
   tpj = $.noConflict()
   WOW = require('wowjs')
-  scroll = require('../../assets/sofbox-v2/js/scrollme')
+  scroll = require('@/assets/js/scrollme')
   $skrollr = require('skrollr')
   require('owl.carousel/dist/owl.carousel')
   require('jarallax/dist/jarallax.min')
@@ -19,7 +19,7 @@ if (typeof window !== 'undefined') {
   import('../../static/revslider/js/rs6.min')
   import('../../static/isotop/js/isotope.pkgd.min')
   import('../../static/isotop/js/isotope.pkgd.min')
-  import('../sofbox-v2/js/semantic-ui-range')
+  import('@/assets/js/semantic-ui-range')
 }
 export const sofbox = {
   index () {
@@ -50,9 +50,12 @@ export const sofbox = {
     let err = "<div class='rs_error_message_box'>"
     err += "<div class='rs_error_message_oops'>Oops...</div>"
     err += "<div class='rs_error_message_content'>"
-    err += 'You have some jquery.js library include that comes after the Slider Revolution files js inclusion.<br>'
-    err += "To fix this, you can:<br>&nbsp;&nbsp;&nbsp; 1. Set 'Module General Options' ->  'jQuery & OutPut Filters' -> 'Put JS to Body' to on"
-    err += '<br>&nbsp;&nbsp;&nbsp; 2. Find the double jQuery.js inclusion and remove it'
+    err +=
+      'You have some jquery.js library include that comes after the Slider Revolution files js inclusion.<br>'
+    err +=
+      "To fix this, you can:<br>&nbsp;&nbsp;&nbsp; 1. Set 'Module General Options' ->  'jQuery & OutPut Filters' -> 'Put JS to Body' to on"
+    err +=
+      '<br>&nbsp;&nbsp;&nbsp; 2. Find the double jQuery.js inclusion and remove it'
     err += '</div>'
     err += '</div>'
     // eslint-disable-next-line no-undef
@@ -102,31 +105,33 @@ export const sofbox = {
         this.initRevSliderPaymentSoftware()
       }, 100)
     } else {
-      tpj('#rev_slider_3_1').show().revolution({
-        jsFileLocation: '../static/assets/revslider/js/',
-        sliderLayout: 'fullwidth',
-        visibilityLevels: '1240,1240,778,480',
-        gridwidth: '1500,1500,778,480',
-        gridheight: '600,600,500,400',
-        minHeight: '',
-        spinner: 'spinner0',
-        editorheight: '600,768,400,400',
-        responsiveLevels: '1240,1240,778,480',
-        disableProgressBar: 'on',
-        parallax: {
-          levels: [5, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 48, 49, 50, 51, 30],
-          type: 'scroll',
-          origo: 'slideCenter',
-          speed: 0,
-          speedls: '1000ms'
-        },
-        sbtimeline: {
-          set: true
-        },
-        fallbacks: {
-          allowHTML5AutoPlayOnAndroid: true
-        }
-      })
+      tpj('#rev_slider_3_1')
+        .show()
+        .revolution({
+          jsFileLocation: '../static/assets/revslider/js/',
+          sliderLayout: 'fullwidth',
+          visibilityLevels: '1240,1240,778,480',
+          gridwidth: '1500,1500,778,480',
+          gridheight: '600,600,500,400',
+          minHeight: '',
+          spinner: 'spinner0',
+          editorheight: '600,768,400,400',
+          responsiveLevels: '1240,1240,778,480',
+          disableProgressBar: 'on',
+          parallax: {
+            levels: [5, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 48, 49, 50, 51, 30],
+            type: 'scroll',
+            origo: 'slideCenter',
+            speed: 0,
+            speedls: '1000ms'
+          },
+          sbtimeline: {
+            set: true
+          },
+          fallbacks: {
+            allowHTML5AutoPlayOnAndroid: true
+          }
+        })
     }
   },
   initRevSliderCloudHosting () {
@@ -135,24 +140,26 @@ export const sofbox = {
         this.initRevSliderCloudHosting()
       }, 100)
     } else {
-      tpj('#rev_slider_8_1').show().revolution({
-        jsFileLocation: '../static/assets/revslider/js/',
-        sliderLayout: 'fullwidth',
-        visibilityLevels: '1240,1240,778,480',
-        gridwidth: '1600,1600,776,480',
-        gridheight: '700,700,600,500',
-        minHeight: '',
-        spinner: 'spinner0',
-        editorheight: '700,768,600,500',
-        responsiveLevels: '1240,1240,778,480',
-        disableProgressBar: 'on',
-        navigation: {
-          onHoverStop: false
-        },
-        fallbacks: {
-          allowHTML5AutoPlayOnAndroid: true
-        }
-      })
+      tpj('#rev_slider_8_1')
+        .show()
+        .revolution({
+          jsFileLocation: '../static/assets/revslider/js/',
+          sliderLayout: 'fullwidth',
+          visibilityLevels: '1240,1240,778,480',
+          gridwidth: '1600,1600,776,480',
+          gridheight: '700,700,600,500',
+          minHeight: '',
+          spinner: 'spinner0',
+          editorheight: '700,768,600,500',
+          responsiveLevels: '1240,1240,778,480',
+          disableProgressBar: 'on',
+          navigation: {
+            onHoverStop: false
+          },
+          fallbacks: {
+            allowHTML5AutoPlayOnAndroid: true
+          }
+        })
     }
   },
   initRevSliderHelpDesk () {
@@ -161,24 +168,26 @@ export const sofbox = {
         this.initRevSliderHelpDesk()
       }, 100)
     } else {
-      tpj('#rev_slider_4_1').show().revolution({
-        jsFileLocation: '../static/assets/revslider/js/',
-        sliderLayout: 'fullwidth',
-        visibilityLevels: '1240,1024,778,480',
-        gridwidth: '1240,1024,778,480',
-        gridheight: '900,768,500,500',
-        minHeight: '',
-        spinner: 'spinner0',
-        editorheight: '900,768,500,500',
-        responsiveLevels: '1240,1024,778,480',
-        disableProgressBar: 'on',
-        navigation: {
-          onHoverStop: false
-        },
-        fallbacks: {
-          allowHTML5AutoPlayOnAndroid: true
-        }
-      })
+      tpj('#rev_slider_4_1')
+        .show()
+        .revolution({
+          jsFileLocation: '../static/assets/revslider/js/',
+          sliderLayout: 'fullwidth',
+          visibilityLevels: '1240,1024,778,480',
+          gridwidth: '1240,1024,778,480',
+          gridheight: '900,768,500,500',
+          minHeight: '',
+          spinner: 'spinner0',
+          editorheight: '900,768,500,500',
+          responsiveLevels: '1240,1024,778,480',
+          disableProgressBar: 'on',
+          navigation: {
+            onHoverStop: false
+          },
+          fallbacks: {
+            allowHTML5AutoPlayOnAndroid: true
+          }
+        })
     }
   },
   initRevSliderSaasMain () {
@@ -187,24 +196,26 @@ export const sofbox = {
         this.initRevSliderSaasMain()
       }, 100)
     } else {
-      tpj('#rev_slider_6_1').show().revolution({
-        jsFileLocation: '../static/assets/revslider/js/',
-        sliderLayout: 'fullwidth',
-        visibilityLevels: '1240,1024,778,480',
-        gridwidth: '1600,1024,778,480',
-        gridheight: '850,500,500,400',
-        minHeight: '',
-        spinner: 'spinner0',
-        editorheight: '850,500,500,400',
-        responsiveLevels: '1240,1024,778,480',
-        disableProgressBar: 'on',
-        navigation: {
-          onHoverStop: false
-        },
-        fallbacks: {
-          allowHTML5AutoPlayOnAndroid: true
-        }
-      })
+      tpj('#rev_slider_6_1')
+        .show()
+        .revolution({
+          jsFileLocation: '../static/assets/revslider/js/',
+          sliderLayout: 'fullwidth',
+          visibilityLevels: '1240,1024,778,480',
+          gridwidth: '1600,1024,778,480',
+          gridheight: '850,500,500,400',
+          minHeight: '',
+          spinner: 'spinner0',
+          editorheight: '850,500,500,400',
+          responsiveLevels: '1240,1024,778,480',
+          disableProgressBar: 'on',
+          navigation: {
+            onHoverStop: false
+          },
+          fallbacks: {
+            allowHTML5AutoPlayOnAndroid: true
+          }
+        })
     }
   },
   initRevSliderTwo () {
@@ -213,24 +224,26 @@ export const sofbox = {
         this.initRevSliderTwo()
       }, 100)
     } else {
-      tpj('#rev_slider_9_1').show().revolution({
-        jsFileLocation: '../static/assets/revslider/js/',
-        sliderLayout: 'fullwidth',
-        visibilityLevels: '1240,1240,778,480',
-        gridwidth: '1600,1600,776,480',
-        gridheight: '700,700,600,500',
-        minHeight: '',
-        spinner: 'spinner0',
-        editorheight: '700,768,600,500',
-        responsiveLevels: '1240,1240,778,480',
-        disableProgressBar: 'on',
-        navigation: {
-          onHoverStop: false
-        },
-        fallbacks: {
-          allowHTML5AutoPlayOnAndroid: true
-        }
-      })
+      tpj('#rev_slider_9_1')
+        .show()
+        .revolution({
+          jsFileLocation: '../static/assets/revslider/js/',
+          sliderLayout: 'fullwidth',
+          visibilityLevels: '1240,1240,778,480',
+          gridwidth: '1600,1600,776,480',
+          gridheight: '700,700,600,500',
+          minHeight: '',
+          spinner: 'spinner0',
+          editorheight: '700,768,600,500',
+          responsiveLevels: '1240,1240,778,480',
+          disableProgressBar: 'on',
+          navigation: {
+            onHoverStop: false
+          },
+          fallbacks: {
+            allowHTML5AutoPlayOnAndroid: true
+          }
+        })
     }
   },
   initRevSliderSaasThree () {
@@ -239,23 +252,25 @@ export const sofbox = {
         this.initRevSliderSaasThree()
       }, 100)
     } else {
-      tpj('#rev_slider_5_1').show().revolution({
-        jsFileLocation: '../static/assets/revslider/js/',
-        sliderLayout: 'fullwidth',
-        visibilityLevels: '1240,1024,778,480',
-        gridwidth: '1600,1024,778,480',
-        gridheight: '1000,768,500,400',
-        spinner: 'spinner0',
-        editorheight: '1000,768,500,400',
-        responsiveLevels: '1240,1024,778,480',
-        disableProgressBar: 'on',
-        navigation: {
-          onHoverStop: false
-        },
-        fallbacks: {
-          allowHTML5AutoPlayOnAndroid: true
-        }
-      })
+      tpj('#rev_slider_5_1')
+        .show()
+        .revolution({
+          jsFileLocation: '../static/assets/revslider/js/',
+          sliderLayout: 'fullwidth',
+          visibilityLevels: '1240,1024,778,480',
+          gridwidth: '1600,1024,778,480',
+          gridheight: '1000,768,500,400',
+          spinner: 'spinner0',
+          editorheight: '1000,768,500,400',
+          responsiveLevels: '1240,1024,778,480',
+          disableProgressBar: 'on',
+          navigation: {
+            onHoverStop: false
+          },
+          fallbacks: {
+            allowHTML5AutoPlayOnAndroid: true
+          }
+        })
     }
   },
   initRevSliderFour () {
@@ -264,24 +279,26 @@ export const sofbox = {
         this.initRevSliderFour()
       }, 100)
     } else {
-      tpj('#rev_slider_7_1').show().revolution({
-        jsFileLocation: '../static/assets/revslider/js/',
-        sliderLayout: 'fullwidth',
-        visibilityLevels: '1240,1240,778,480',
-        gridwidth: '1240,1240,778,480',
-        gridheight: '450,450,400,400',
-        minHeight: '',
-        spinner: 'spinner0',
-        editorheight: '450,768,400,400',
-        responsiveLevels: '1240,1240,778,480',
-        disableProgressBar: 'on',
-        navigation: {
-          onHoverStop: false
-        },
-        fallbacks: {
-          allowHTML5AutoPlayOnAndroid: true
-        }
-      })
+      tpj('#rev_slider_7_1')
+        .show()
+        .revolution({
+          jsFileLocation: '../static/assets/revslider/js/',
+          sliderLayout: 'fullwidth',
+          visibilityLevels: '1240,1240,778,480',
+          gridwidth: '1240,1240,778,480',
+          gridheight: '450,450,400,400',
+          minHeight: '',
+          spinner: 'spinner0',
+          editorheight: '450,768,400,400',
+          responsiveLevels: '1240,1240,778,480',
+          disableProgressBar: 'on',
+          navigation: {
+            onHoverStop: false
+          },
+          fallbacks: {
+            allowHTML5AutoPlayOnAndroid: true
+          }
+        })
     }
   },
   initRevSliderFive () {
@@ -290,24 +307,26 @@ export const sofbox = {
         this.initRevSliderFive()
       }, 100)
     } else {
-      tpj('#rev_slider_10_1').show().revolution({
-        jsFileLocation: '../static/assets/revslider/js/',
-        sliderLayout: 'fullwidth',
-        visibilityLevels: '1240,1240,778,480',
-        gridwidth: '1600,1600,778,480',
-        gridheight: '850,850,700,500',
-        minHeight: '',
-        spinner: 'spinner0',
-        editorheight: '850,768,700,500',
-        responsiveLevels: '1240,1240,778,480',
-        disableProgressBar: 'on',
-        navigation: {
-          onHoverStop: false
-        },
-        fallbacks: {
-          allowHTML5AutoPlayOnAndroid: true
-        }
-      })
+      tpj('#rev_slider_10_1')
+        .show()
+        .revolution({
+          jsFileLocation: '../static/assets/revslider/js/',
+          sliderLayout: 'fullwidth',
+          visibilityLevels: '1240,1240,778,480',
+          gridwidth: '1600,1600,778,480',
+          gridheight: '850,850,700,500',
+          minHeight: '',
+          spinner: 'spinner0',
+          editorheight: '850,768,700,500',
+          responsiveLevels: '1240,1240,778,480',
+          disableProgressBar: 'on',
+          navigation: {
+            onHoverStop: false
+          },
+          fallbacks: {
+            allowHTML5AutoPlayOnAndroid: true
+          }
+        })
     }
   },
   initRevSliderSix () {
@@ -316,24 +335,26 @@ export const sofbox = {
         this.initRevSliderSix()
       }, 100)
     } else {
-      tpj('#rev_slider_11_1').show().revolution({
-        jsFileLocation: '../static/assets/revslider/js/',
-        sliderLayout: 'fullwidth',
-        visibilityLevels: '1240,1240,778,480',
-        gridwidth: '1240,1240,778,480',
-        gridheight: '1000,1000,600,550',
-        minHeight: '',
-        spinner: 'spinner0',
-        editorheight: '1000,768,600,550',
-        responsiveLevels: '1240,1240,778,480',
-        disableProgressBar: 'on',
-        navigation: {
-          onHoverStop: false
-        },
-        fallbacks: {
-          allowHTML5AutoPlayOnAndroid: true
-        }
-      })
+      tpj('#rev_slider_11_1')
+        .show()
+        .revolution({
+          jsFileLocation: '../static/assets/revslider/js/',
+          sliderLayout: 'fullwidth',
+          visibilityLevels: '1240,1240,778,480',
+          gridwidth: '1240,1240,778,480',
+          gridheight: '1000,1000,600,550',
+          minHeight: '',
+          spinner: 'spinner0',
+          editorheight: '1000,768,600,550',
+          responsiveLevels: '1240,1240,778,480',
+          disableProgressBar: 'on',
+          navigation: {
+            onHoverStop: false
+          },
+          fallbacks: {
+            allowHTML5AutoPlayOnAndroid: true
+          }
+        })
     }
   },
   loaderInit () {
@@ -523,11 +544,20 @@ export const sofbox = {
   },
   accordion () {
     $('.iq-accordion .iq-accordion-block .accordion-details').hide()
-    $('.iq-accordion .iq-accordion-block:first').addClass('accordion-active').children().slideDown('slow')
+    $('.iq-accordion .iq-accordion-block:first')
+      .addClass('accordion-active')
+      .children()
+      .slideDown('slow')
     $('.iq-accordion .iq-accordion-block').on('click', function () {
       if ($(this).children('div.accordion-details ').is(':hidden')) {
-        $('.iq-accordion .iq-accordion-block').removeClass('accordion-active').children('div.accordion-details ').slideUp('slow')
-        $(this).toggleClass('accordion-active').children('div.accordion-details ').slideDown('slow')
+        $('.iq-accordion .iq-accordion-block')
+          .removeClass('accordion-active')
+          .children('div.accordion-details ')
+          .slideUp('slow')
+        $(this)
+          .toggleClass('accordion-active')
+          .children('div.accordion-details ')
+          .slideDown('slow')
       }
     })
   },
@@ -539,46 +569,55 @@ export const sofbox = {
       const animate = $(this).data('animate')
       if (elementPos < topOfWindow + $(window).height() - 30 && !animate) {
         $(this).data('animate', true)
-        $(this).find('.circle').circleProgress({
-          startAngle: -Math.PI / 2,
-          value: percent / 100,
-          thickness: 10,
-          fill: {
-            color: '#6f73f0'
-          }
-        }).stop()
-        $(this).find('.circle.purple-hover').circleProgress({
-          fill: {
-            color: '#6f73f0'
-          }
-        })
-        $(this).find('.circle.org-hover').circleProgress({
-          fill: {
-            color: '#ff796d'
-          }
-        })
-        $(this).find('.circle.green-hover').circleProgress({
-          fill: {
-            color: '#33e2a0'
-          }
-        })
+        $(this)
+          .find('.circle')
+          .circleProgress({
+            startAngle: -Math.PI / 2,
+            value: percent / 100,
+            thickness: 10,
+            fill: {
+              color: '#6f73f0'
+            }
+          })
+          .stop()
+        $(this)
+          .find('.circle.purple-hover')
+          .circleProgress({
+            fill: {
+              color: '#6f73f0'
+            }
+          })
+        $(this)
+          .find('.circle.org-hover')
+          .circleProgress({
+            fill: {
+              color: '#ff796d'
+            }
+          })
+        $(this)
+          .find('.circle.green-hover')
+          .circleProgress({
+            fill: {
+              color: '#33e2a0'
+            }
+          })
       }
     })
   },
 
   progress () {
-    $('.iq-progress-bar > span').each(function() {
-      var jQuerythis = $(this);
-      var width = $(this).data('percent');
+    $('.iq-progress-bar > span').each(function () {
+      const jQuerythis = $(this)
+      const width = $(this).data('percent')
       jQuerythis.css({
-          'transition': 'width 2s'
-      });
-      setTimeout(function() {
-          jQuerythis.appear(function() {
-              jQuerythis.css('width', width + '%');
-          });
-      }, 500);
-  });
+        transition: 'width 2s'
+      })
+      setTimeout(function () {
+        jQuerythis.appear(function () {
+          jQuerythis.css('width', width + '%')
+        })
+      }, 500)
+    })
   },
   magnific () {
     $('.popup-gallery').magnificPopup({

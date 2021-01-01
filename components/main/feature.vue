@@ -5,25 +5,16 @@
         <div class="col-lg-6">
           <div class="popup-images align-left">
             <div class="img-one wow zoomIn" data-wow-duration="0.6s">
-              <img
-                src="@/assets/sofbox-v2/images/home-4/401.png"
-                alt="image1"
-              >
+              <img src="@/assets/xebra-tech/401.png" alt="image1">
             </div>
             <div class="d-block" />
           </div>
           <div class="layer_wrap iq-objects style-two left-top">
             <span class="iq-objects-02">
-              <img
-                src="@/assets/sofbox-v2/images/home-1/07.png"
-                alt="drive02"
-              >
+              <img src="@/assets/xebra-tech/07.png" alt="drive02">
             </span>
             <span class="iq-objects-03">
-              <img
-                src="@/assets/sofbox-v2/images/home-1/image5.png"
-                alt="drive02"
-              >
+              <img src="@/assets/xebra-tech/05.png" alt="drive02">
             </span>
           </div>
         </div>

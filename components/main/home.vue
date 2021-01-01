@@ -110,7 +110,7 @@ export default {
 </script>
 <style scoped>
 .sofbox-gradient-bg-top {
-  background-image: url(../../assets/sofbox-v2/images/home-1/15.png);
+  background-image: url(../../assets/xebra-tech/15.png);
   background-position: 0 0 !important;
   background-repeat: no-repeat !important;
 }

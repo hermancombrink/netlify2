@@ -15,9 +15,9 @@ if (typeof window !== 'undefined') {
 Vue.use(BootstrapVue)
 Vue.use(VueRetina, { retina })
 
-const components = require.context('@/components/sofbox')
-_.forEach(components.keys(), (fileName) => {
-  const componentConfig = components(fileName)
-  const componentName = fileName.split('/').pop().split('.')[0]
-  Vue.component(componentName, componentConfig.default || componentConfig)
-})
+// const components = require.context('@/components/sofbox')
+// _.forEach(components.keys(), (fileName) => {
+//   const componentConfig = components(fileName)
+//   const componentName = fileName.split('/').pop().split('.')[0]
+//   Vue.component(componentName, componentConfig.default || componentConfig)
+// })

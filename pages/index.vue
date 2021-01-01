@@ -9,7 +9,7 @@
     </div>
 
     <FooterStyle01
-      :footer-logo="footerLogo"
+      :footer-logo="''"
       :footer-text="''"
       :footer-title="''"
       :footer-description="''"
@@ -23,7 +23,6 @@ import home from '@/components/main/home'
 import feature from '@/components/main/feature'
 import blog from '@/components/main/blog'
 import contact from '@/components/main/contact'
-import footerLogo from '@/assets/sofbox-v2/images/home-2/logo-white.png'
 
 export default {
   components: {
@@ -35,7 +34,6 @@ export default {
   },
   data () {
     return {
-      footerLogo
     }
   },
   mounted () {

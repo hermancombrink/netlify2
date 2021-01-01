@@ -2,7 +2,7 @@
 author:
   name: Herman
   bio: Software Developer / Solutions Architect
-image: /home-1/16.jpg
+image: /blog/16.jpg
 title: Test
 description: ABCD
 

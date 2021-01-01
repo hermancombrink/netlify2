@@ -14,7 +14,7 @@
 </template>
 <script>
 import logoImg from '@/assets/xebra-tech/xt-logo-w.png'
-import logoWhite from '@/assets/sofbox-v2/images/logo-white.png'
+import logoWhite from '@/assets/xebra-tech/xt-logo.png'
 export default {
   name: 'XTContent',
   data () {

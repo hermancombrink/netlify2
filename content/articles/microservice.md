@@ -2,7 +2,7 @@
 author:
   name: Herman
   bio: Software Developer / Solutions Architect
-image: /home-1/17.jpg
+image: /blog/17.jpg
 title: Microservice
 description: To micro or not to micro
 
