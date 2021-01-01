@@ -1,3 +1,5 @@
+import highlightjs from 'highlight.js'
+
 export default {
   ssr: false,
   /*
@@ -60,6 +62,7 @@ export default {
     '@nuxt/content',
     '@nuxtjs/pwa'
   ],
+
   /*
    ** Build configuration
    */
@@ -89,6 +92,7 @@ export default {
     }
   },
   moment: {},
+
   vue: {
     config: {
       ignoredElements: [
