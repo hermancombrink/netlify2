@@ -44,7 +44,7 @@ I was focused on delivering mobile applications both internal and the public usi
 * Jan 2010 - Jan 2012 (2 years)
 · Designed and delivered Windows-based solutions for financial, commercial domestic insurance products catering
 for policy management, re-insurance and claim control.
-SOFTWARE DEVELOPER / OWNER at SUPERNATURAL TECHNOLOGIES
+Software Developer / Owner at Supernatural Technologies
 Mar 2009 - Jan 2010 (10 months)
 Work as a contractor for FinRite mobile insurance. During this time a developed and designed mobile insurance
 call centre software to drive a multi-tenant solution for the company with a strong audit trail to align with
