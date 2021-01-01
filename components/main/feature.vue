@@ -30,6 +30,14 @@
       >
         Read More
       </b-btn>
+      <b-btn
+        variant="outline-dark"
+        size="sm"
+        href="/xebra-tech/HCOMBRINK.pdf"
+        class="button gradient-btn button-icon mt-5"
+      >
+        Download Resume
+      </b-btn>
     </div>
   </section>
 </template>
