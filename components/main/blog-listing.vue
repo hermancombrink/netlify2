@@ -1,25 +1,36 @@
 <template>
   <div class="row">
-    <div v-for="(list,index) in bloglists" :key="index" :class="'col-lg-'+lg+' '+'col-md-'+md+' '+'col-sm-'+sm">
-      <div class="effect-chico blog">
-        <img :src="list.media" class="img-fluid" alt="img">
-        <div class="blog-info">
-          <a routerLink="/sofbox-saas/blog-detail-left-sidebar"><h2 class="font-weight-bold">{{ list.title }}</h2></a>
-          <p>{{ list.description }}</p>
-        </div>
-        <div class="blog-comment">
-          <ul>
-            <li class="list-inline-item  font-weight-bold">
-              <a href="" class="text-white">{{ list.createddate }}</a>
-            </li>
-            <li class="float-right list-inline-item ml-3">
-              <a href="" class="text-white font-weight-bold"><span class="icon"><i class=" far fa-comment-alt" /></span> {{ list.comments }} </a>
-            </li>
-            <li class="float-right list-inline-item ">
-              <a href="" class="text-white font-weight-bold"><span class="icon"><i class="far fa-heart" /></span> {{ list.likes }} </a>
-            </li>
-          </ul>
-        </div>
+    <div
+      v-for="(list, index) in bloglists"
+      :key="index"
+      :class="'col-lg-' + lg + ' ' + 'col-md-' + md + ' ' + 'col-sm-' + sm"
+    >
+      <div class="effect-chico blog pb-5">
+        <b-row>
+          <b-col sm="6">
+            <b-link :to="`${list.path}`">
+              <img
+                :src="list.image"
+                class="img-fluid img-blog"
+                alt="Blog Image"
+              >
+            </b-link>
+          </b-col>
+          <b-col sm="6">
+            <div class="blog-info">
+              <b-link :to="`${list.path}`">
+                <h2 class="font-weight-bold">
+                  {{ list.title }}
+                </h2>
+              </b-link>
+              <small class="form-text text-muted">
+                <i class="far fa-calendar-alt" />
+                {{ $moment(list.createdAt).format('DD MMMM YYYY') }}
+              </small>
+              <p>{{ list.description }}</p>
+            </div>
+          </b-col>
+        </b-row>
       </div>
     </div>
   </div>
@@ -47,3 +58,8 @@ export default {
   }
 }
 </script>
+<style scoped>
+.img-blog {
+  max-height: 460px;
+}
+</style>

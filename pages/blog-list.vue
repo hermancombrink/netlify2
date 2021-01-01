@@ -39,9 +39,24 @@ export default {
     BlogListing,
     contact
   },
+  async fetch () {
+    if (this.searchQuery) {
+      this.blogList = await this.$content('articles')
+        .sortBy('createdAt', 'desc')
+        .limit(6)
+        .search(this.searchQuery)
+        .fetch()
+    } else {
+      this.blogList = await this.$content('articles')
+        .sortBy('createdAt', 'desc')
+        .limit(6)
+        .fetch()
+    }
+  },
   data () {
     return {
-      blogList: []
+      blogList: [],
+      searchQuery: ''
     }
   },
   mounted () {
