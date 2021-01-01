@@ -43,13 +43,13 @@ export default {
     if (this.searchQuery) {
       this.blogList = await this.$content('articles')
         .sortBy('createdAt', 'desc')
-        .limit(6)
+        .limit(18)
         .search(this.searchQuery)
         .fetch()
     } else {
       this.blogList = await this.$content('articles')
         .sortBy('createdAt', 'desc')
-        .limit(6)
+        .limit(18)
         .fetch()
     }
   },
