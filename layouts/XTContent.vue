@@ -41,12 +41,6 @@ export default {
           active: true,
           redirect: true
         },
-        {
-          href: '/blog-list',
-          title: 'XT Blog',
-          active: true,
-          redirect: true
-        },
         { href: '#iq-contact', title: 'Contact Me' }
       ]
     }

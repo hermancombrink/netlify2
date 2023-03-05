@@ -34,7 +34,6 @@ export default {
         },
         { href: '#iq-about', title: 'About XT' },
         { href: '#iq-feature', title: 'About Me' },
-        { href: '#iq-blog', title: 'XT Blog' },
         { href: '#iq-contact', title: 'Contact Me' }
       ]
     }

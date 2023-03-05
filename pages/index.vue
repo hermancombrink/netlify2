@@ -4,7 +4,6 @@
       <home id="iq-home" />
       <about id="iq-about" />
       <feature id="iq-feature" />
-      <blog />
       <contact id="iq-contact" />
     </div>
 
@@ -21,7 +20,6 @@ import { sofbox } from '@/assets/app/app'
 import about from '@/components/main/about'
 import home from '@/components/main/home'
 import feature from '@/components/main/feature'
-import blog from '@/components/main/blog'
 import contact from '@/components/main/contact'
 
 export default {
@@ -29,7 +27,6 @@ export default {
     home,
     about,
     feature,
-    blog,
     contact
   },
   data () {
