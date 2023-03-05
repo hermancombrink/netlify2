@@ -34,7 +34,7 @@
     "nuxt": "^2.13.0",
     "owl.carousel": "^2.3.4",
     "popper.js": "^1.15.0",
-    "postcss-loader": "^3.0.0",
+    "postcss-loader": "^4.0.3",
     "retinajs": "^2.1.3",
     "scrollmagic": "^2.0.7",
     "shiki": "^0.2.7",
